@@ -4,7 +4,7 @@
 
 @layer base {
     html {
-    @apply bg-neutral-100 p-0 m-0 overflow-hidden
+    @apply bg-neutral-100 p-0 m-0 overflow-x-hidden scrollbar-thin scrollbar-thumb-red-500
     }
 }
 
@@ -19,7 +19,7 @@
         @apply bg-[#ff6a69] text-white font-semibold px-2 py-1 text-sm rounded-full w-24  hover:bg-white hover:border-[1px] hover:border-neutral-600 transition-all hover:text-neutral-600 
     }
     .heroContentDivContainer {
-        @apply flex flex-col sm:ml-0   sm:space-x-40 justify-between md:w-[100%] md:h-screen space-x-0 mr-0 sm:mr-0 sm:items-start md:space-y-0 space-y-28 md:flex-row items-center
+        @apply flex flex-col sm:ml-0   sm:space-x-40 justify-between md:w-[100%] md:h-[100%] space-x-0 mr-0 sm:mr-0 sm:items-start md:space-y-0 space-y-28 md:flex-row items-center
     }
 
     .primaryGreetText {
@@ -27,7 +27,7 @@
     }
 
     .nameText {
-        @apply text-slate-900  text-[60px] leading-[75px] sm:leading-[85px] sm:tracking-wider xl:text-[100px] sm:text-[85px] font-black
+        @apply text-slate-900  text-[60px] leading-[75px] sm:leading-[85px] sm:tracking-wider xl:text-[100px] sm:text-[85px] font-semibold
     }
 
     .heroImageDivContainer {

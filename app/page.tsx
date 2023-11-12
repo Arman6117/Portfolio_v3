@@ -2,6 +2,7 @@ import HeroContent from "@/components/HeroContent";
 import Logo from "@/components/Logo";
 import MobNavbar from "@/components/MobNavbar";
 import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -22,9 +23,13 @@ export default function Home() {
         </div>
       </section>
       <section className="  ">
-        <div className="">
+        <div className="flex flex-col space-y-24">
           <HeroContent />
+          {/* <div className="w-screen h-1 bg-black absolute left- bottom-0"></div> */}
         </div>
+      </section>
+      <section className="w-screen h-screen">
+        <Skills/>
       </section>
     </main>
   );
