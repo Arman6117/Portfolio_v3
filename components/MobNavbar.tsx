@@ -10,7 +10,7 @@ const MobNavbar = () => {
     <div className="relative">
       <div
         onClick={() => setShowNav(!showNav)}
-        className=" transition-all top-0 right-0 z-50"
+        className="relative transition-all top-0 right-0 z-50"
       >
           
         {!showNav ? (<RxHamburgerMenu
