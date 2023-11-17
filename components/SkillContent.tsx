@@ -4,7 +4,7 @@ import { SiNextdotjs } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoSass } from "react-icons/io";
 import { AiFillHtml5 } from "react-icons/ai";
 import { LuGithub } from "react-icons/lu";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 
 import SkillsEle from "./SkillsEle";
 
@@ -48,8 +48,8 @@ const SkillContent = () => {
         </SkillsEle>
       </div>
       <div>
-        <SkillsEle className="bg-pink-600" title="Sass">
-          <IoLogoSass className="text-white sm:text-[50px] text-[20px] "  />
+        <SkillsEle className="bg-blue-500" title="TypeScript">
+          <BiLogoTypescript className="text-white sm:text-[50px] text-[20px] "  />
         </SkillsEle>
       </div>
     </div>

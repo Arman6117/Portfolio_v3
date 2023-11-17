@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 
-.slick-slide slick-active slick-current {
-    width: 0 !important;
-}
+
 @layer base {
     html {
     @apply bg-neutral-100 p-0 m-0 overflow-x-hidden scrollbar-thin scrollbar-thumb-red-500
