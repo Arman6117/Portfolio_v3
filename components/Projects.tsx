@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectContent from './ProjectContent'
+import About from './Contact'
 
 const Projects = () => {
   return (
@@ -12,6 +13,8 @@ const Projects = () => {
             <div>
                 <ProjectContent/>
             </div>
+        </div>
+        <div>
         </div>
     </div>
   )

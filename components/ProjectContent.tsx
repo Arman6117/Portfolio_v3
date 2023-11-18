@@ -6,6 +6,7 @@ import Discord from "../public/images/Discord.png";
 
 import ProjectCard from "./ProjectCard";
 import { IoLogoGithub } from "react-icons/io";
+import Contact from "./Contact";
 
 const ProjectContent = () => {
   const handleClick = () => {
@@ -14,7 +15,7 @@ const ProjectContent = () => {
   return (
     <div className="h-screen w-screen ">
       {/* <div className="w-[100vw] mt-10  -ml-[8vw] sm:top-[131rem] top-[126rem] hidden sm:block absolute h-[1.5px] bg-neutral-700 rounded-full" /> */}
-      <div className="grid  sm:ml-2 sm:px-0 gap-10  grid-cols-1 sm:grid-cols-1 mt-10  ">
+      <div className="flex flex-col sm:ml-2 sm:px-0 gap-10  mt-10  ">
         <div className="relative ">
           <ProjectCard
             title="Spotify"
@@ -23,6 +24,7 @@ const ProjectContent = () => {
             className="bg-green-500"
           />
         </div>
+        <div className="bg-black w-[78%] -ml-1 h-[1.5px]" />
         <div className="relative  ">
           <ProjectCard
             title="Netflix"
@@ -31,6 +33,7 @@ const ProjectContent = () => {
             className="bg-rose-800 "
           />
         </div>
+        <div className="bg-black w-[78%] -ml-1 h-[1.5px]" />
 
         <div className="relative  mt-">
           <ProjectCard
@@ -40,6 +43,8 @@ const ProjectContent = () => {
             className="bg-blue-700"
           />
         </div>
+        <div className="bg-black w-[78%] -ml-1 h-[1.5px]" />
+
         <div className="relative  ">
           <ProjectCard
             title="Keeper"
@@ -48,6 +53,7 @@ const ProjectContent = () => {
             className="bg-yellow-500"
           />
         </div>
+        <div className="bg-black w-[78%] -ml-1 h-[1.5px]" />
       </div>
       <div className="mt-20 md:ml-[300px] xs:ml-[50px]  ">
         <button
@@ -62,6 +68,9 @@ const ProjectContent = () => {
             See All Projects
           </span>
         </button>
+      </div>
+      <div className="w-screen h-screen">
+        <Contact />
       </div>
     </div>
   );
