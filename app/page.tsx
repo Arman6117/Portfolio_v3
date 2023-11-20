@@ -33,7 +33,7 @@ export default function Home() {
       <section className="w-screen h-screen">
         <Skills />
       </section>
-      <section className="w-screen h-screen  ">
+      <section className="w-screen h-screen   ">
         <Projects />
       </section>
     </main>

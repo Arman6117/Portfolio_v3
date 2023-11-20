@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
+
 import NavLink from './NavLink';
 
 const MobNavbar = () => {
@@ -20,11 +21,11 @@ const MobNavbar = () => {
           size={35}/> }
       </div>
       <div
-        className={`fixed bg-[#ff6a69]  top-0 right-0 h-screen w-10/12  z-40 transform transition-transform ${
+        className={`fixed overflow-hidden bg-[#ff6a69]  top-0 right-0 h-screen w-full z-40 transform transition-transform ${
           showNav ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex flex-col space-y-20 h-full mt-24 items-center">
+        <div className="flex flex-col space-y-20 h-full mt-40 items-center">
           <NavLink>Home</NavLink>
           <NavLink>Skills</NavLink>
           <NavLink>Projects</NavLink>

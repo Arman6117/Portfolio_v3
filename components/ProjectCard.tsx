@@ -12,6 +12,7 @@ interface ProjectCardProps {
   imgPath: StaticImageData;
   url: string;
   className: string;
+  description: React.ReactNode;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,32 +20,36 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imgPath,
   url,
   className,
+  description,
 }) => {
   const router = useRouter();
 
   return (
-    <div className=" flex pr-10   ">
-      <div className="flex flex-col bg-transparent items-center justify-center  sm:border-2 sm:w-[80%] border-2 px-2 py-10 border-black w-[90%] h-full rounded-xl">
-        <div
-          className={twMerge(
-            `bg-green-500 w-[90%]  rounded-xl h-full py-4 px-2 flex-col flex   justify-center`,
-            className
-          )}
-        >
-          <div className="flex items-center pt-2  flex-col justify-center ">
-            <div className="mb-1 border-2 group border-neutral-400  p-1 rounded-xl bg-neutral-200 shadow-2xl">
+    <div className=" flex    ">
+      <div
+        className={twMerge(
+          `bg-green-500 w-[100%] shadow-lg items-center rounded-xl h-full py-4  flex justify-center`,
+          className
+        )}
+      >
+        <div>
+          <div className="flex flex-col md:flex-row space-x-7 items-center py-3 group cursor-pointer justify-center ">
+            <div className="mb-1  rounded-xl  ">
               <Image
                 src={imgPath}
                 alt={title}
-                width={350}
-                height={350}
-                className="rounded-md shadow-md object-contain "
+                width={550}
+                height={550}
+                className="rounded-md   sm:group-hover:right-[0px] md:top-0 top-[60px] transition-all   sm:relative sm:group-hover:top-0 sm:-right-[0px] md:-right-[175px]   "
               />
             </div>
-            <div className="mb-10 mt-2">
-              <h1 className="text-white font-bold text-4xl md:text-5xl ">
+            <div className="mb-0 mt-2 flex sm:px-4 text-start  md:text-start sm:text-center flex-col space-y-5">
+              <h1 className="text-white sm:opacity-0 group-hover:block   md:group-hover:right-[0px] sm:-right-[0px] md:top-0 sm:-top-[250px] md:right-[260px] sm:group-hover:opacity-100 transition-all relative sm:group-hover:top-0 font-bold text-4xl md:text-5xl ">
                 {title}
               </h1>
+              <p className="text-white sm:opacity-0 sm:group-hover:block  md:group-hover:right-[0px] sm:-top-[200px] md:top-0  sm:group-hover:top-0  md:right-[260px] sm:group-hover:opacity-100 transition-all relative   text- md:text-sm font-light">
+                {description}
+              </p>
             </div>
           </div>
           <div className="flex space-x-10 scale-[.7] sm:scale-100 xs:justify-center xs:space-x-40  mb-2 ">
